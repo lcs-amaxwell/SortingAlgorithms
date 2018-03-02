@@ -29,9 +29,7 @@ numbers.append( random(between: 1, and: 50) )
 numbers
 
 // Move the value at index 1 to index 0 and vice versa
-let temporaryValue = numbers[0]
-numbers[0] = numbers[1]
-numbers[1] = temporaryValue
+
 
 // Now what's in the array?
 numbers
@@ -112,4 +110,56 @@ numbers
  */
 
 // Begin your implementation below...
+
+// Creating List Of Numbers
+//for _ in 1...14 {
+//    numbers.append( random(between: 1, and: 50) )
+//     }
+
+
+numbers.append(6)
+numbers.append(4)
+numbers.append(3)
+numbers.append(2)
+numbers.append(1)
+
+numbers
+
+
+
+
+//let temporaryValue = numbers[0]
+//numbers[0] = numbers[1]
+//numbers[1] = temporaryValue
+
+// Set the lowest to the current first card in the lineup
+var lowestValue = numbers[0]
+var lowestIndex = 0
+
+print("i")
+
+// Loop through to find the actual lowest value
+for i in 1..<numbers.count {
+    
+    //  If current number is lower then previous number
+    if numbers[i] < lowestValue {
+        lowestValue = numbers[i]
+        lowestIndex = i
+        
+        for i in 1..<numbers.count {
+            print("Index is \(i) and the value is \(numbers[i])")
+        }
+        print("==================")
+    }
+    print("Index is \(i) and the value is \(numbers[i])")
+}
+
+// What is the lowest value?
+lowestValue
+lowestIndex 
+
+
+
+
+
 
