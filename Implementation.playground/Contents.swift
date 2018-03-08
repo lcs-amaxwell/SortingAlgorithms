@@ -132,6 +132,9 @@ numbers
 //numbers[0] = numbers[1]
 //numbers[1] = temporaryValue
 
+// Sorted List
+var sortedList : [Int] = []
+
 // Set the lowest to the current first card in the lineup
 var lowestValue = numbers[0]
 var lowestIndex = 0
@@ -154,9 +157,23 @@ for i in 1..<numbers.count {
     print("Index is \(i) and the value is \(numbers[i])")
 }
 
+
+//for i in 0...numbers.count -1 {print (" Index\(lowes), value: \(numbers[i])")
+//}
+
+
 // What is the lowest value?
 lowestValue
-lowestIndex 
+lowestIndex
+
+// Removing lowest from the unsorted list to the sorted
+numbers.remove(at: lowestIndex)
+
+// move the lowest index to the sorted list
+
+if lowestValue 
+
+
 
 
 
